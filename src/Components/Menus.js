@@ -1,18 +1,10 @@
 import React from "react";
-import {
-  AppBar,
-  Toolbar,
-  IconButton,
-  Typography,
-  Button,
-  Grid,
-  Container,
-} from "@material-ui/core";
+import { AppBar, Toolbar, Grid, Container } from "@material-ui/core";
 
 function Menus() {
   return (
-    <AppBar position="sticky">
-      <Container maxWidth>
+    <Container maxWidth={false}>
+      <AppBar>
         <Toolbar>
           <Grid container>
             <Grid item xs={3}>
@@ -25,8 +17,8 @@ function Menus() {
             </Grid>
           </Grid>
         </Toolbar>
-      </Container>
-    </AppBar>
+      </AppBar>
+    </Container>
   );
 }
 

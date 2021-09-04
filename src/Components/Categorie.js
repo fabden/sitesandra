@@ -4,13 +4,14 @@ import React from "react";
 function Categorie() {
   return (
     <Container>
-      categorie
-      <Grid container justifyContent="space-around" alignItems="center">
-        <CardCategorie></CardCategorie>
-        <CardCategorie></CardCategorie>
-        <CardCategorie></CardCategorie>
-        <CardCategorie></CardCategorie>
-      </Grid>
+      <Box py={5}>
+        <Grid container justifyContent="space-around" alignItems="center">
+          <CardCategorie></CardCategorie>
+          <CardCategorie></CardCategorie>
+          <CardCategorie></CardCategorie>
+          <CardCategorie></CardCategorie>
+        </Grid>
+      </Box>
       <Grid
         container
         direction="column"
