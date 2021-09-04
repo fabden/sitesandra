@@ -7,8 +7,7 @@ import imgp from "../asset/logo192.png";
 
 const usestyles = makeStyles((theme) => ({
   root: {
-    background:
-      "linear-gradient(to right, rgba(88, 207, 144, 0.6) , rgb(254, 254, 2,0.6) )",
+    background:"linear-gradient(45deg, rgba(88, 207, 144, 0.6) , rgb(254, 254, 2,0.2) )",
     position: "absolute",
     width:'100%',
     height:'600px'
@@ -19,6 +18,9 @@ const usestyles = makeStyles((theme) => ({
   positionAbsolute: {
     position: "absolute",
   },
+  index:{
+      zIndex:'1',
+  },
 }));
 
 function slider() {
@@ -28,7 +30,7 @@ function slider() {
     <>
       <Container maxWidth={false} disableGutters>
         <Grid container className={classes.positionRelative} justifyContent="center" >
-          <Box height='600px' width='100%' display="flex" justifyContent="center" alignItems="center" zIndex="tooltip">
+          <Box height='600px' width='100%' display="flex" justifyContent="center" alignItems="center" className={classes.index}>
             <Typography variant="h1">fdfdffds</Typography>
           </Box>
           <Carousel
