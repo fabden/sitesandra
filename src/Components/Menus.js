@@ -1,6 +1,7 @@
 import React from "react";
 import { AppBar, Toolbar, Grid, Container, Box } from "@material-ui/core";
 import logo from "../asset/images/logo.png";
+import { Link } from "react-router-dom";
 
 function Menus() {
   return (
@@ -10,13 +11,13 @@ function Menus() {
           <Grid container alignItems="center">
             <Grid item xs={3} container  justifyContent="center">
               <Box width="100px" clone>
-                <img src={logo} alt="riviere ardeche" />
+                <img src={logo} alt="logo jolieboabab" />
               </Box>
             </Grid>
             <Grid item xs={9} container justifyContent="space-evenly">
-              <Grid item>accuiel</Grid>
-              <Grid item>a-propos</Grid>
-              <Grid item>portefolio</Grid>
+              <Grid item><Link to='/'>accuiel</Link> </Grid>
+              <Grid item><Link to='/'>accuiel</Link></Grid>
+              <Grid item><Link to='/'>accuiel</Link></Grid>
             </Grid>
           </Grid>
         </Toolbar>
