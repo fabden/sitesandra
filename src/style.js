@@ -21,6 +21,12 @@ const theme = createTheme({
   },
 
   overrides: {
+    MuiCssBaseline: {
+ 
+        html:{
+          scrollBehavior: 'smooth',
+        }
+      },
  
 
     MuiAppBar: {

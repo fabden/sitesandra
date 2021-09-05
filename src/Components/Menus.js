@@ -15,9 +15,9 @@ function Menus() {
               </Box>
             </Grid>
             <Grid item xs={9} container justifyContent="space-evenly">
-              <Grid item><Link to='/'>accuiel</Link> </Grid>
-              <Grid item><Link to='/'>accuiel</Link></Grid>
-              <Grid item><Link to='/'>accuiel</Link></Grid>
+              <Grid item> <Link to='/'>Accueil</Link> </Grid>
+              <Grid item><Link to='/#marche'>Marchés</Link></Grid>
+              <Grid item><Link to='/#creation'>Création</Link></Grid>
             </Grid>
           </Grid>
         </Toolbar>

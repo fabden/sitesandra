@@ -106,7 +106,7 @@ function NuagePhotos() {
   ]);
 
   return (
-    <Container maxWidth={false} disableGutters className={classes.root}>
+    <Container maxWidth={false} disableGutters className={classes.root} id='creation'>
       <Grid container alignItems="center" direction="column">
         <Box my={5} color="#ffffff">
           <Typography variant="h3">Quelque Créations</Typography>
@@ -138,6 +138,7 @@ const CardPhotos = ({ photocard, photoAlt }) => {
         width="200px"
         overflow="hidden"
         className={classes.Card}
+        
       >
         <Box position="absolute" className={classes.CardImage}>
           <img src={photocard} alt={photoAlt} className={classes.imgcover} />

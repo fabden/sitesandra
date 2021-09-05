@@ -9,7 +9,7 @@ function Footer() {
         <Container >
           <Grid container   justifyContent="center"  alignItems="center" >
             <Button color="primary" component={Link} to="/Condition-Generale">
-             <Typography variant='h7'> Condition general d'utilisation</Typography> 
+             <Typography variant='body2'> Condition general d'utilisation</Typography> 
             </Button>
           </Grid>
         </Container>

@@ -20,7 +20,7 @@ function App() {
           <Missions></Missions>
           <Marche></Marche>
         </Route>
-        <Route path="/Condition-Generale">
+        <Route exact path="/Condition-Generale">
           <ConditionsGenerale></ConditionsGenerale>
         </Route>
       </Switch>
