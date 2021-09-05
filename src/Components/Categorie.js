@@ -8,6 +8,8 @@ import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import PersonIcon from "@material-ui/icons/Person";
 import BlurCircularIcon from "@material-ui/icons/BlurCircular";
+import photo18 from "../asset/images/photo18.png";
+import photo19 from "../asset/images/photo19.png";
 import React from "react";
 
 const usestyles = makeStyles((theme) => ({
@@ -36,11 +38,13 @@ function Categorie() {
             icone={<OpacityIcon />}
             categorie="Respect de l'environement et de la sante"
             colorb="rgb(254, 254, 2,0.1)"
+            photo={photo18}
           ></CardCategorie>
           <CardCategorie
             icone={<AutorenewIcon />}
             categorie="Fabriquer en ardeche"
             colorb="rgb(254, 254, 2,0.78)"
+           
           ></CardCategorie>
           <CardCategorie
             icone={<LocalFloristIcon />}
@@ -49,8 +53,9 @@ function Categorie() {
           ></CardCategorie>
           <CardCategorie
             icone={<PublicIcon />}
-            categorie="Bijoux"
+            categorie="Fait main"
             colorb="#454545"
+            photo={photo19}
           ></CardCategorie>
         </Grid>
       </Box>
@@ -131,7 +136,7 @@ function Categorie() {
 }
 export default Categorie;
 
-const CardCategorie = ({ icone, categorie, colorb }) => {
+const CardCategorie = ({ icone, categorie, photo }) => {
   const classes = usestyles();
 
   return (
@@ -153,8 +158,12 @@ const CardCategorie = ({ icone, categorie, colorb }) => {
             <Typography variant="h4" align='center'>{categorie}</Typography>
           </Box>
         </Box>
-        <Box height="60%" bgcolor="#ffffff">
-          bas
+        <Box height="60%" overflow="hidden" >
+        <img
+            src={photo}
+            alt="{img.titrephot}"
+            
+          />
         </Box>
       </Grid>
     </Box>

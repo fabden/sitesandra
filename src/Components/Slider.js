@@ -53,13 +53,13 @@ function slider() {
             interval={6000} 
           >
             <Box height='600px' >
-              <img src={img1} className={classes.transparense}/>  
+              <img src={img1} className={classes.transparense}  alt="riviere ardeche"/>  
             </Box>
             <Box height='600px' >
-              <img src={img2} className={classes.transparense} />
+              <img src={img2} className={classes.transparense} alt="riviere ardeche" />
             </Box>
             <Box height='600px' >
-              <img src={img3} className={classes.transparense} />
+              <img src={img3} className={classes.transparense} alt="riviere ardeche" />
             </Box>
           </Carousel>
           </Hidden>

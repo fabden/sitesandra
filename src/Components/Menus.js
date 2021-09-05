@@ -10,7 +10,7 @@ function Menus() {
           <Grid container alignItems="center">
             <Grid item xs={3} container  justifyContent="center">
               <Box width="100px" clone>
-                <img src={logo} />
+                <img src={logo} alt="riviere ardeche" />
               </Box>
             </Grid>
             <Grid item xs={9} container justifyContent="space-evenly">
