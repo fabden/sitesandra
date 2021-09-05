@@ -13,7 +13,7 @@ import React from "react";
 const usestyles = makeStyles((theme) => ({
   Fond1: {
     background:
-      "linear-gradient(45deg, rgba(88, 207, 144, 0.6) , rgb(254, 254, 2,0.4) )",
+      "linear-gradient(45deg, rgba(88, 207, 144, 0.8) , rgb(254, 254, 2,0.4) )",
   },
   root:{
       marginTop:'50px',
@@ -34,17 +34,17 @@ function Categorie() {
         >
           <CardCategorie
             icone={<OpacityIcon />}
-            categorie="Cuisine"
+            categorie="Respect de l'environement et de la sante"
             colorb="rgb(254, 254, 2,0.1)"
           ></CardCategorie>
           <CardCategorie
             icone={<AutorenewIcon />}
-            categorie="Salle de bain"
+            categorie="Fabriquer en ardeche"
             colorb="rgb(254, 254, 2,0.78)"
           ></CardCategorie>
           <CardCategorie
             icone={<LocalFloristIcon />}
-            categorie="Enfant"
+            categorie="Produits eco-responsable"
             colorb="#454545"
           ></CardCategorie>
           <CardCategorie
@@ -135,7 +135,7 @@ const CardCategorie = ({ icone, categorie, colorb }) => {
   const classes = usestyles();
 
   return (
-    <Box height="460px" width="250px" clone>
+    <Box height="500px" width="250px" clone>
       <Grid item xl>
         <Box
           display="flex"
@@ -144,15 +144,16 @@ const CardCategorie = ({ icone, categorie, colorb }) => {
           justifyContent="center"
           height="40%"
           className={classes.Fond1}
-        >
+         
+                >
           <Box clone fontSize="60px" color="#ffffff">
             {icone}
           </Box>
-          <Box mt="20px" color="#ffffff">
-            <Typography variant="h4">{categorie}</Typography>
+          <Box mt={0} p={1} color="#ffffff">
+            <Typography variant="h4" align='center'>{categorie}</Typography>
           </Box>
         </Box>
-        <Box height="60%" bgcolor="#125545">
+        <Box height="60%" bgcolor="#ffffff">
           bas
         </Box>
       </Grid>
