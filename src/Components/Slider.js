@@ -1,26 +1,36 @@
-import { Container, Box, Grid, Typography } from "@material-ui/core";
+import { Container, Box, Grid, Typography, Hidden } from "@material-ui/core";
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { makeStyles } from "@material-ui/core/styles";
-import imgp from "../asset/logo192.png";
+import img1 from "../asset/images/slide1.jpg";
+import img2 from "../asset/images/slide2.jpg";
+import img3 from "../asset/images/slide3.jpg";
 
 const usestyles = makeStyles((theme) => ({
   root: {
-    background:"linear-gradient(45deg, rgba(88, 207, 144, 0.6) , rgb(254, 254, 2,0.2) )",
+    
     position: "absolute",
     width:'100%',
-    height:'600px'
+    
   },
   positionRelative: {
     position: "relative",
+    height:'600px',
+    background:"linear-gradient(45deg, rgba(88, 207, 144, 0.4) , rgb(254, 254, 2,0.4) )",
+    backgroundImage: `url(${img3})`,
   },
   positionAbsolute: {
     position: "absolute",
   },
+  transparense:{
+    opacity: '1',
+    objectFit: 'cover',
+  },
   index:{
       zIndex:'1',
   },
+
 }));
 
 function slider() {
@@ -30,29 +40,29 @@ function slider() {
     <>
       <Container maxWidth={false} disableGutters>
         <Grid container className={classes.positionRelative} justifyContent="center" >
-          <Box height='600px' width='100%' display="flex" justifyContent="center" alignItems="center" className={classes.index}>
-            <Typography variant="h1">fdfdffds</Typography>
+          <Box color='#ffffff' height='600px' width='80%' display="flex" justifyContent="center" alignItems="center" className={classes.index}>
+            <Typography align='center' variant="h3">Laissez vous tenter par les produits utiles beaux, durable, ecologiques et fait main en Ardéche</Typography>
           </Box>
+          <Hidden smDown>
           <Carousel
             autoPlay={true}
             infiniteLoop
             showIndicators={false}
             showThumbs={false}
             className={classes.root}
+            interval={6000} 
           >
-            <Box height='600px'>
-              <img src={imgp} />
+            <Box height='600px' >
+              <img src={img1} className={classes.transparense}/>  
             </Box>
-            <Box height='600px'>
-              <img src="assets/1.jpeg" />
+            <Box height='600px' >
+              <img src={img2} className={classes.transparense} />
             </Box>
-            <Box height='600px'>
-              <img src="assets/1.jpeg" />
-            </Box>
-            <Box height='600px'>
-              <img src="assets/1.jpeg" />
+            <Box height='600px' >
+              <img src={img3} className={classes.transparense} />
             </Box>
           </Carousel>
+          </Hidden>
         </Grid>
       </Container>
     </>
