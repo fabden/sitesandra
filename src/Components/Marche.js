@@ -1,4 +1,4 @@
-import { Container, Grid, Box, Typography, Button } from "@material-ui/core";
+import { Container, Grid, Box, Typography } from "@material-ui/core";
 import photo22 from "../asset/images/photo22.png";
 import photo23 from "../asset/images/photo23.png";
 import photo24 from "../asset/images/photo24.png";
@@ -12,6 +12,7 @@ function Marche() {
         direction="column"
         justifyContent="center"
         alignItems="center"
+        id='marche'
       >
         <Typography variant='h2' align="center">Retrouvez moi aux marchés</Typography>
         <Grid item container justifyContent="center" alignItems="center" >

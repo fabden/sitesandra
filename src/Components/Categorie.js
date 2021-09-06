@@ -1,4 +1,4 @@
-import { Container, Grid, Box, Typography, Button } from "@material-ui/core";
+import { Container, Grid, Box, Typography } from "@material-ui/core";
 import OpacityIcon from "@material-ui/icons/Opacity";
 import AutorenewIcon from "@material-ui/icons/Autorenew";
 import LocalFloristIcon from "@material-ui/icons/LocalFlorist";
@@ -158,7 +158,7 @@ const CardCategorie = ({ icone, categorie, photo }) => {
   const classes = usestyles();
 
   return (
-    <Box height="500px" width="250px" clone>
+    <Box height="500px" width="300px" clone>
       <Grid item xl>
         <Box
           display="flex"

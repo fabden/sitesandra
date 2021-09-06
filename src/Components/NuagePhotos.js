@@ -1,9 +1,4 @@
-import {
-  Container,
-  Grid,
-  Box,
-  Typography,
-} from "@material-ui/core";
+import { Container, Grid, Box, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import React, { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
@@ -30,8 +25,6 @@ const usestyles = makeStyles((theme) => ({
   },
   imgcover: {
     objectFit: "cover",
-  
-
   },
   Card: {},
   CardImage: {},
@@ -106,10 +99,17 @@ function NuagePhotos() {
   ]);
 
   return (
-    <Container maxWidth={false} disableGutters className={classes.root} id='creation'>
+    <Container
+      maxWidth={false}
+      disableGutters
+      className={classes.root}
+      id="creation"
+    >
       <Grid container alignItems="center" direction="column">
         <Box my={5} color="#ffffff">
-          <Typography variant="h3">Quelque Créations</Typography>
+          <Typography variant="h3" align="center">
+            Quelque Créations
+          </Typography>
         </Box>
         <Grid item xs={8} container justifyContent="center" alignItems="center">
           {listeimg.map((img) => (
@@ -117,8 +117,7 @@ function NuagePhotos() {
               key={uuidv4()}
               photocard={img.imgphoto}
               photoAlt={img.titrephot}
-            >
-            </CardPhotos>
+            ></CardPhotos>
           ))}
         </Grid>
       </Grid>
@@ -132,18 +131,18 @@ const CardPhotos = ({ photocard, photoAlt }) => {
 
   return (
     <>
-      <Box
-        position="relative"
-        height="300px"
-        width="200px"
-        overflow="hidden"
-        className={classes.Card}
-        
-      >
-        <Box position="absolute" className={classes.CardImage}>
-          <img src={photocard} alt={photoAlt} className={classes.imgcover} />
-        </Box>
-{       /* <Box
+     
+        <Box
+          position="relative"
+          height="300px"
+          width="300px"
+          overflow="hidden"
+          className={classes.Card}
+        >
+          <Box position="absolute" className={classes.CardImage}>
+            <img src={photocard} alt={photoAlt} className={classes.imgcover} />
+          </Box>
+          {/* <Box
           position="absolute"
           bottom="0px"
           p={1}
@@ -155,7 +154,8 @@ const CardPhotos = ({ photocard, photoAlt }) => {
             text ecriture gfffff fffffffffffff fffffff ffjfjhgjghj kghkghkxcxcx{" "}
           </Typography>
 </Box> */}
-      </Box>
+        </Box>
+
     </>
   );
 };

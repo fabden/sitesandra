@@ -5,8 +5,9 @@ import NuagePhotos from "./Components/NuagePhotos";
 import Missions from "./Components/Missions";
 import Footer from "./Components/Footer";
 import Marche from "./Components/Marche";
+import Contact from './Components/Contact';
 import ConditionsGenerale from "./Components/ConditionsGenerale";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route} from "react-router-dom";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <NuagePhotos></NuagePhotos>
           <Missions></Missions>
           <Marche></Marche>
+          <Contact></Contact>
         </Route>
         <Route exact path="/Condition-Generale">
           <ConditionsGenerale></ConditionsGenerale>
