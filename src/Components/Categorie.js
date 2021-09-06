@@ -10,6 +10,8 @@ import PersonIcon from "@material-ui/icons/Person";
 import BlurCircularIcon from "@material-ui/icons/BlurCircular";
 import photo18 from "../asset/images/photo18.png";
 import photo19 from "../asset/images/photo19.png";
+import photo20 from "../asset/images/photo20.png";
+import photo21 from "../asset/images/photo21.png";
 import React from "react";
 
 const usestyles = makeStyles((theme) => ({
@@ -17,14 +19,14 @@ const usestyles = makeStyles((theme) => ({
     background:
       "linear-gradient(45deg, rgba(88, 207, 144, 0.8) , rgb(254, 254, 2,0.4) )",
   },
-  root:{
-      marginTop:'50px',
-      marginBottom:'50px',
-  }
+  root: {
+    marginTop: "50px",
+    marginBottom: "50px",
+  },
 }));
 
 function Categorie() {
-    const classes = usestyles()
+  const classes = usestyles();
   return (
     <Container>
       <Box py={5}>
@@ -44,12 +46,13 @@ function Categorie() {
             icone={<AutorenewIcon />}
             categorie="Fabriquer en ardeche"
             colorb="rgb(254, 254, 2,0.78)"
-           
+            photo={photo21}
           ></CardCategorie>
           <CardCategorie
             icone={<LocalFloristIcon />}
             categorie="Produits eco-responsable"
             colorb="#454545"
+            photo={photo20}
           ></CardCategorie>
           <CardCategorie
             icone={<PublicIcon />}
@@ -65,8 +68,19 @@ function Categorie() {
         justifyContent="center"
         alignItems="center"
       >
-        <Typography variant="h3" align='center'> Every day 8,000 beavers perished</Typography>
-        <Grid item container justifyContent="space-around" alignItems="center" className={classes.root}>
+        <Box my={4}>
+        <Typography variant="h3" align="center">
+       
+          Chaque seconde, 634000Kg de dechet deversés dans les océans
+        </Typography>
+       </Box>
+        <Grid
+          item
+          container
+          justifyContent="space-around"
+          alignItems="center"
+          className={classes.root}
+        >
           <Grid item>
             <Box
               display="flex"
@@ -77,8 +91,8 @@ function Categorie() {
                 <ThumbUpAltIcon></ThumbUpAltIcon>
               </Box>
               <Box ml="10px">
-                <Typography>ghgghgh</Typography>
-                <Typography>ghgghghhhhhhhhh</Typography>
+                <Typography variant="h3">304</Typography>
+                <Typography variant="h5">Likes</Typography>
               </Box>
             </Box>
           </Grid>
@@ -92,8 +106,8 @@ function Categorie() {
                 <FavoriteIcon></FavoriteIcon>
               </Box>
               <Box ml="10px">
-                <Typography>ghgghgh</Typography>
-                <Typography>ghgghghhhhhhhhh</Typography>
+                <Typography variant="h3">30</Typography>
+                <Typography variant="h5">Motif de tissus</Typography>
               </Box>
             </Box>
           </Grid>
@@ -107,8 +121,8 @@ function Categorie() {
                 <BlurCircularIcon></BlurCircularIcon>
               </Box>
               <Box ml="10px">
-                <Typography>ghgghgh</Typography>
-                <Typography>ghgghghhhhhhhhh</Typography>
+                <Typography variant="h3">35</Typography>
+                <Typography variant="h5">Produits diférents</Typography>
               </Box>
             </Box>
           </Grid>
@@ -118,18 +132,22 @@ function Categorie() {
               justifyContent="space-around"
               alignItems="center"
             >
-              <Box fontSize="55px" clone >
+              <Box fontSize="55px" clone>
                 <PersonIcon></PersonIcon>
               </Box>
               <Box ml="10px">
-                <Typography>ghgghgh</Typography>
-                <Typography>ghgghghhhhhhhhh</Typography>
+                <Typography variant="h3">1252</Typography>
+                <Typography variant="h5">Belles Rencontres</Typography>
               </Box>
             </Box>
           </Grid>
         </Grid>
-        <Typography variant="body1" align='center'> Donec fringilla, erat et semper eleifend, justo quam sodales a vehicula ipsum libero eget mi. Integer condimentum, nibh aliquet.</Typography>
-        <Button>donate</Button>
+        <Box my={4}>
+          <Typography variant="h4" align="center">
+            Mieux vaut prendre le changement par la main avant qu'il ne nous
+            prenne par la gorge
+          </Typography>
+        </Box>
       </Grid>
     </Container>
   );
@@ -149,21 +167,18 @@ const CardCategorie = ({ icone, categorie, photo }) => {
           justifyContent="center"
           height="40%"
           className={classes.Fond1}
-         
-                >
+        >
           <Box clone fontSize="60px" color="#ffffff">
             {icone}
           </Box>
           <Box mt={0} p={1} color="#ffffff">
-            <Typography variant="h4" align='center'>{categorie}</Typography>
+            <Typography variant="h4" align="center">
+              {categorie}
+            </Typography>
           </Box>
         </Box>
-        <Box height="60%" overflow="hidden" >
-        <img
-            src={photo}
-            alt="{img.titrephot}"
-            
-          />
+        <Box height="60%" overflow="hidden">
+          <img src={photo} alt="{img.titrephot}" />
         </Box>
       </Grid>
     </Box>

@@ -11,9 +11,11 @@ function ConditionsGenerale() {
           justifyContent="center"
           alignItems="stretch"
         >
-          <Typography variant="h2" align="center">
+          <Box mb={4}>
+          <Typography variant="h2" align="center" >
             Mention Légale
           </Typography>
+          </Box>
           <Box>
             <Typography variant="h4">1. Présentation du site.</Typography>
             <Typography>
