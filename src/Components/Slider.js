@@ -39,6 +39,7 @@ function slider() {
   return (
     <>
       <Container maxWidth={false} disableGutters>
+        <Box height='100px'></Box>
         <Grid container className={classes.positionRelative} justifyContent="center" >
           <Box color='#ffffff' height='600px' width='80%' display="flex" justifyContent="center" alignItems="center" className={classes.index}>
             <Typography align='center' variant="h3">Laissez-vous tenter par des produits utiles, beaux, durables, écologiques et fait main en Ardèche</Typography>
