@@ -105,13 +105,13 @@ function NuagePhotos() {
       className={classes.root}
       id="creation"
     >
-      <Grid container alignItems="center" direction="column">
+      <Grid container alignItems="center" direction="column" justifyContent="center">
         <Box my={5} color="#ffffff">
           <Typography variant="h3" align="center">
             Quelque Créations
           </Typography>
         </Box>
-        <Grid item xs={8} container justifyContent="center" alignItems="center">
+        <Grid item xs={12} container justifyContent="center" alignItems="center">
           {listeimg.map((img) => (
             <CardPhotos
               key={uuidv4()}

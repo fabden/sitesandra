@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Toolbar, Grid, Container, Box, Link} from "@material-ui/core";
+import { AppBar, Toolbar, Grid, Container, Box, Link, Typography} from "@material-ui/core";
 import logo from "../asset/images/logo.png";
 
 
@@ -17,14 +17,14 @@ function Menus() {
             </Grid>
             <Grid item xs={6} container justifyContent="space-evenly">
               <Grid item>
-                {" "}
-                <Link href="/#">Accueil</Link>{" "}
+             
+               <Link href="/#"> Accueil</Link>
               </Grid>
               <Grid item>
                 <Link href="/#marche">Marchés</Link>
               </Grid>
               <Grid item>
-                <Link href="/#creation">Création</Link>
+                <Link href="/#creation">Créations</Link>
               </Grid>
             </Grid>
           </Grid>

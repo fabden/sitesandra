@@ -19,7 +19,7 @@ function Footer() {
   const classes = usestyles();
   return (
     <>
-      <Box p={3}>
+      <Box py={3}>
         <Container className={classes.root} maxWidth={false} >
           <Grid container   justifyContent="center"  alignItems="center" >
             <Button color="primary" component={Link} to="/Condition-Generale">

@@ -1,8 +1,4 @@
 import { Container, Grid, Box, Typography } from "@material-ui/core";
-import OpacityIcon from "@material-ui/icons/Opacity";
-import AutorenewIcon from "@material-ui/icons/Autorenew";
-import LocalFloristIcon from "@material-ui/icons/LocalFlorist";
-import PublicIcon from "@material-ui/icons/Public";
 import { makeStyles } from "@material-ui/core/styles";
 import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
 import FavoriteIcon from "@material-ui/icons/Favorite";
@@ -37,26 +33,26 @@ function Categorie() {
           spacing={2}
         >
           <CardCategorie
-            icone={<OpacityIcon />}
-            categorie="Respect de l'environement et de la sante"
+         
+            categorie="Respect de l'environnement et de la santé"
             colorb="rgb(254, 254, 2,0.1)"
             photo={photo18}
           ></CardCategorie>
           <CardCategorie
-            icone={<AutorenewIcon />}
-            categorie="Fabriquer en ardeche"
+           
+            categorie="Fabriquer en Ardèche avec soin"
             colorb="rgb(254, 254, 2,0.78)"
             photo={photo21}
           ></CardCategorie>
           <CardCategorie
-            icone={<LocalFloristIcon />}
-            categorie="Produits eco-responsable"
+         
+            categorie="Produits éco-responsables"
             colorb="#454545"
             photo={photo20}
           ></CardCategorie>
           <CardCategorie
-            icone={<PublicIcon />}
-            categorie="Fait main"
+           
+            categorie="Créations artisanales"
             colorb="#454545"
             photo={photo19}
           ></CardCategorie>
@@ -88,7 +84,7 @@ function Categorie() {
               alignItems="center"
             >
               <Box fontSize="55px" clone>
-                <ThumbUpAltIcon></ThumbUpAltIcon>
+                <ThumbUpAltIcon ></ThumbUpAltIcon>
               </Box>
               <Box ml="10px">
                 <Typography variant="h3">304</Typography>
@@ -168,9 +164,7 @@ const CardCategorie = ({ icone, categorie, photo }) => {
           height="40%"
           className={classes.Fond1}
         >
-          <Box clone fontSize="60px" color="#ffffff">
-            {icone}
-          </Box>
+
           <Box mt={0} p={1} color="#ffffff">
             <Typography variant="h4" align="center">
               {categorie}

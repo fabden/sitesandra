@@ -41,7 +41,7 @@ function slider() {
       <Container maxWidth={false} disableGutters>
         <Grid container className={classes.positionRelative} justifyContent="center" >
           <Box color='#ffffff' height='600px' width='80%' display="flex" justifyContent="center" alignItems="center" className={classes.index}>
-            <Typography align='center' variant="h3">Laissez vous tenter par les produits utiles beaux, durable, ecologiques et fait main en Ardéche</Typography>
+            <Typography align='center' variant="h3">Laissez-vous tenter par des produits utiles, beaux, durables, écologiques et fait main en Ardèche</Typography>
           </Box>
           <Hidden smDown>
           <Carousel
